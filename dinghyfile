@@ -1,5 +1,5 @@
 {
-  "application": "testingdinghyApp",
+  "application": "testingDinghyApp",
   "pipelines": [
      {
   "expectedArtifacts": [
