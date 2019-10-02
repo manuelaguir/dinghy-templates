@@ -1,21 +1,18 @@
-{
-  "application": "yourspinnakerapplicationname",
-  "pipelines": [
-     {
-  "keepWaitingPipelines": false,
-  "lastModifiedBy": "manuelaguir",
-  "limitConcurrent": true,
-  "stages": [
-    {
-      "name": "Wait",
-      "refId": "1",
-      "requisiteStageRefIds": [],
-      "type": "wait",
-      "waitTime": 10
-    }
-  ],
-  "triggers": [],
-  "updateTs": "1570042423000"
-}
-   ]
-}
+---
+application: test-dinghy
+globals:
+  waitTime: 42
+  retries: 5
+pipelines:
+- application: test-dinghy
+  name: "My cool pipeline"
+  appConfig: {}
+  keepWaitingPipelines: false
+  limitConcurrent: true
+  stages:
+  - name: Wait For It...
+    refId: '1'
+    requisiteStageRefIds: []
+    type: wait
+    waitTime: 4
+  triggers: []
