@@ -5,6 +5,7 @@
      "application": "testingdinghyApp",
       "name": "testingdinghyPipeline",
       "locked": {
+    "allowUnlockUi": true,
     "ui": false
   },
   "expectedArtifacts": [
