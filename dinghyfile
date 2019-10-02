@@ -1,14 +1,12 @@
 {
-  "application": "testingdinghyApp",
+  "application": "yourspinnakerapplicationname",
   "pipelines": [
      {
-  {
   "keepWaitingPipelines": false,
   "lastModifiedBy": "manuelaguir",
   "limitConcurrent": true,
   "stages": [
     {
-      "isNew": true,
       "name": "Wait",
       "refId": "1",
       "requisiteStageRefIds": [],
@@ -17,7 +15,7 @@
     }
   ],
   "triggers": [],
-  "updateTs": "1567633141000"
+  "updateTs": "1570042423000"
 }
    ]
 }
