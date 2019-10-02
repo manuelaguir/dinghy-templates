@@ -38,7 +38,7 @@
       "refId": "1",
       "requisiteStageRefIds": [],
       "type": "wait",
-      "waitTime": 10
+      "waitTime": 5
     },
     {
       "account": "kubernetes",
