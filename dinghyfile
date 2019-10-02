@@ -3,7 +3,7 @@
   "pipelines": [
      {
      "application": "testingdinghyApp",
-      "name": "testingdinghyPipeline",
+      "name": "testingdinghyPipeline2",
       "locked": {
     "allowUnlockUi": true,
     "ui": false
