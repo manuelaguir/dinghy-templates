@@ -4,6 +4,9 @@
      {
      "application": "testingdinghyApp",
       "name": "testingdinghyPipeline",
+      "locked": {
+    "ui": false
+  },
   "expectedArtifacts": [
     {
       "defaultArtifact": {
