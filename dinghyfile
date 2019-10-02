@@ -2,6 +2,8 @@
   "application": "testingdinghyApp",
   "pipelines": [
      {
+     "application": "testingdinghyApp",
+      "name": "testingdinghyPipeline",
   "expectedArtifacts": [
     {
       "defaultArtifact": {
