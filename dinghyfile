@@ -1,18 +1,109 @@
----
-application: test-dinghy
-globals:
-  waitTime: 42
-  retries: 5
-pipelines:
-- application: test-dinghy
-  name: "My cool pipeline"
-  appConfig: {}
-  keepWaitingPipelines: false
-  limitConcurrent: true
-  stages:
-  - name: Wait For It...
-    refId: '1'
-    requisiteStageRefIds: []
-    type: wait
-    waitTime: 4
-  triggers: []
+{
+  "application": "testingdinghyApp",
+  "pipelines": [
+     {
+  "expectedArtifacts": [
+    {
+      "defaultArtifact": {
+        "artifactAccount": "manuelaguir",
+        "id": "7b247694-a83c-40c6-b1d0-f29d6325d298",
+        "name": "deployment.yml",
+        "reference": "https://api.github.com/repos/manuelaguir/personal-first/contents/deployment.yml",
+        "type": "github/file"
+      },
+      "displayName": "shy-bullfrog-30",
+      "id": "49cc3f65-5462-4e2b-b0fc-7d25fccdf353",
+      "matchArtifact": {
+        "artifactAccount": "manuelaguir",
+        "id": "65e57da3-b32e-47d1-a198-1cf144f88471",
+        "name": "deployment.yml",
+        "type": "github/file"
+      },
+      "useDefaultArtifact": true,
+      "usePriorArtifact": false
+    }
+  ],
+  "keepWaitingPipelines": false,
+  "lastModifiedBy": "manuelaguir",
+  "limitConcurrent": true,
+  "stages": [
+    {
+      "name": "Wait",
+      "refId": "1",
+      "requisiteStageRefIds": [],
+      "type": "wait",
+      "waitTime": 10
+    },
+    {
+      "account": "kubernetes",
+      "cloudProvider": "kubernetes",
+      "manifestArtifactAccount": "manuelaguir",
+      "manifestArtifactId": "49cc3f65-5462-4e2b-b0fc-7d25fccdf353",
+      "moniker": {
+        "app": "testapp"
+      },
+      "name": "Deploy (Manifest)",
+      "refId": "2",
+      "requiredArtifactIds": [
+        "49cc3f65-5462-4e2b-b0fc-7d25fccdf353"
+      ],
+      "requiredArtifacts": [],
+      "requisiteStageRefIds": [
+        "1"
+      ],
+      "skipExpressionEvaluation": false,
+      "source": "artifact",
+      "trafficManagement": {
+        "enabled": false,
+        "options": {
+          "enableTraffic": false,
+          "services": []
+        }
+      },
+      "type": "deployManifest"
+    },
+    {
+      "failPipeline": true,
+      "instructions": "Do you want to destroy pods?",
+      "judgmentInputs": [],
+      "name": "Manual Judgment",
+      "notifications": [],
+      "refId": "3",
+      "requisiteStageRefIds": [
+        "2"
+      ],
+      "type": "manualJudgment"
+    },
+    {
+      "account": "kubernetes",
+      "app": "testapp",
+      "cloudProvider": "kubernetes",
+      "location": "manuel-spin",
+      "manifestName": "deployment nginx-deployment",
+      "mode": "static",
+      "name": "Delete (Manifest)",
+      "options": {
+        "cascading": true,
+        "gracePeriodSeconds": 80
+      },
+      "refId": "4",
+      "requisiteStageRefIds": [
+        "3"
+      ],
+      "type": "deleteManifest"
+    }
+  ],
+  "triggers": [
+    {
+      "branch": "master",
+      "enabled": true,
+      "project": "manuelaguir",
+      "slug": "personal-first",
+      "source": "github",
+      "type": "git"
+    }
+  ],
+  "updateTs": "1569965011000"
+}
+   ]
+}
