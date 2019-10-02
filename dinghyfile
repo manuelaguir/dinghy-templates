@@ -38,7 +38,7 @@
       "refId": "1",
       "requisiteStageRefIds": [],
       "type": "wait",
-      "waitTime": 25
+      "waitTime": 10
     },
     {
       "account": "kubernetes",
@@ -81,6 +81,13 @@
       "type": "manualJudgment"
     },
     {
+      "name": "Wait2",
+      "refId": "4",
+      "requisiteStageRefIds": [],
+      "type": "wait",
+      "waitTime": 25
+    },
+    {
       "account": "kubernetes",
       "app": "testapp",
       "cloudProvider": "kubernetes",
@@ -92,7 +99,7 @@
         "cascading": true,
         "gracePeriodSeconds": 80
       },
-      "refId": "4",
+      "refId": "5",
       "requisiteStageRefIds": [
         "3"
       ],
