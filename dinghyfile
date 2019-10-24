@@ -1,11 +1,11 @@
 {
-  "application": "testingdinghyApp",
+  "application": "testingDinghyApp",
   "spec": {
      "email": "manuel.aguirre@armory.io"
   },
   "pipelines": [
      {
-     "application": "testingdinghyApp",
+     "application": "testingDinghyApp",
       "name": "testingdinghyPipeline2",
       "locked": {
     "allowUnlockUi": true,
