@@ -1,6 +1,8 @@
 {
   "application": "testingdinghyApp",
-  "email": "manuel.aguirre@armory.io",
+  "spec" = {
+     "email" = "manuel.aguirre@armory.io"
+  },
   "pipelines": [
      {
      "application": "testingdinghyApp",
