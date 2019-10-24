@@ -1,6 +1,6 @@
 {
   "application": "testingdinghyApp",
-  "owner": "manuel.aguirre@armory.io",
+  "owner-email": "manuel.aguirre@armory.io",
   "pipelines": [
      {
      "application": "testingdinghyApp",
