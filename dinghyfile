@@ -7,7 +7,8 @@
       "limitConcurrent": true,
       "name": "hellogo",
       "locked": {
-    "allowUnlockUi": true
+    "allowUnlockUi": true,
+    "ui": false
   },
       "expectedArtifacts": [
         {
