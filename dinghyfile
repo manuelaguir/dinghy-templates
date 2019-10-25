@@ -6,7 +6,7 @@
 	  	{{ module "bake.manifest.module" }}
 	  ],
       "application": "hellogo",
-      "keepWaitingPipelines": false,
+      "keepWaitingPipelines": true,
       "limitConcurrent": true,
       "name": "hellogo",
       "locked": {
