@@ -14,7 +14,7 @@
       "expectedArtifacts": [
         {
           "defaultArtifact": {
-            "artifactAccount": "github",
+            "artifactAccount": "manuelaguir",
             "name": "gld/stb/hellogo/kustomization.yml",
             "reference": "https://github.anim.dreamworks.com/api/v3/repos/pe/service-config-v3/contents/gld/stb/hellogo/kustomization.yml",
             "type": "github/file",
@@ -23,7 +23,7 @@
           "displayName": "kustomization",
           "id": "id1",
           "matchArtifact": {
-            "artifactAccount": "github",
+            "artifactAccount": "manuelaguir",
             "name": "pe/service-config-v3/gld/stb/hellogo/kustomization.yml",
             "type": "github/file"
           },
