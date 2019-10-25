@@ -7,10 +7,6 @@
       "keepWaitingPipelines": false,
       "limitConcurrent": true,
       "name": "hellogo",
-      "locked": {
-        "allowUnlockUi": true,
-        "ui": false
-      },
       "expectedArtifacts": [
         {
           "defaultArtifact": {
