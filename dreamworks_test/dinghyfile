@@ -3,7 +3,7 @@
   "pipelines": [
     {
       "stages": [
-	  	{{ module "bake.manifest" }}
+	  	{{ module "bake.manifest.module" }}
 	  ],
       "application": "hellogo",
       "keepWaitingPipelines": false,
