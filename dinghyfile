@@ -1,25 +1,15 @@
 {
-  "application": "hellogo",
+  "application": "dreamworks",
   "pipelines": [
     {
-      "application": "hellogo",
+      "application": "dreamworks",
       "keepWaitingPipelines": false,
       "limitConcurrent": true,
-      "name": "hellogo",
+      "name": "test-dream",
       "locked": {
-        "allowUnlockUi": true,
-        "ui": false
+          "allowUnlockUi": true,
+          "ui": false
       },
-      "triggers": [],
-      "stages": [
-       {
-      "name": "wait",
-      "refId": "1",
-      "requisiteStageRefIds": [],
-      "type": "wait",
-      "waitTime": 20
-    }
-],
       "expectedArtifacts": [
         {
           "defaultArtifact": {
@@ -33,13 +23,17 @@
           "id": "id1",
           "matchArtifact": {
             "artifactAccount": "github",
-            "name": "pe/service-config-v3/gld/stb/hellogo/kustomization.yml",
+            "name": "gld/stb/hellogo/kustomization.yml",
             "type": "github/file"
           },
           "useDefaultArtifact": true,
           "usePriorArtifact": false
         }
-      ]
+      ],
+      "stages": [
+         {{ module "bake.manifest" }}
+      ],
+      "triggers": []
     }
   ]
 }
