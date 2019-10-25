@@ -13,11 +13,11 @@
       "triggers": [],
       "stages": [
        {
-      "name": "Wait",
+      "name": "wait",
       "refId": "1",
       "requisiteStageRefIds": [],
       "type": "wait",
-      "waitTime": 10
+      "waitTime": 20
     }
 ],
       "expectedArtifacts": [
