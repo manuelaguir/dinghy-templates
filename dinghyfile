@@ -2,7 +2,8 @@
   "application": "hellogo",
   "pipelines": [
     {
-      "stages": [],
+      "stages": [
+],
       "application": "hellogo",
       "keepWaitingPipelines": false,
       "limitConcurrent": true,
