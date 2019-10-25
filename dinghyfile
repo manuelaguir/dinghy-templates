@@ -7,31 +7,30 @@
       "limitConcurrent": true,
       "name": "hellogo",
       "locked": {
-    "allowUnlockUi": true,
-    "ui": false
-  },
-    "expectedArtifacts": [
-    {
-      "defaultArtifact": {
-        "artifactAccount": "manuelaguir",
-        "name": "gld/stb/hellogo/kustomization.yml",
-        "reference": "https://github.anim.dreamworks.com/api/v3/repos/pe/service-config-v3/contents/gld/stb/hellogo/kustomization.yml",
-        "type": "github/file",
-        "version": "master"
+        "allowUnlockUi": true,
+        "ui": false
       },
-      "displayName": "display",
-      "id": "id1",
-      "matchArtifact": {
-        "artifactAccount": "manuelaguir",
-        "name": "pe/service-config-v3/gld/stb/hellogo/kustomization.yml",
-        "type": "github/file"
-      },
-      "useDefaultArtifact": true,
-      "usePriorArtifact": false
-    }
-  ],
-      "stages": [],
-      "triggers": []
+      "triggers": [],
+      "expectedArtifacts": [
+        {
+          "defaultArtifact": {
+            "artifactAccount": "github",
+            "name": "gld/stb/hellogo/kustomization.yml",
+            "reference": "https://github.anim.dreamworks.com/api/v3/repos/pe/service-config-v3/contents/gld/stb/hellogo/kustomization.yml",
+            "type": "github/file",
+            "version": "master"
+          },
+          "displayName": "kustomization",
+          "id": "id1",
+          "matchArtifact": {
+            "artifactAccount": "github",
+            "name": "pe/service-config-v3/gld/stb/hellogo/kustomization.yml",
+            "type": "github/file"
+          },
+          "useDefaultArtifact": true,
+          "usePriorArtifact": false
+        }
+      ]
     }
   ]
 }
