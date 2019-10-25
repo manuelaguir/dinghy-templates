@@ -19,7 +19,7 @@
             "type": "github/file",
             "version": "master"
           },
-          "displayName": "kustomization",
+          "displayName": "display",
           "id": "id1",
           "matchArtifact": {
             "artifactAccount": "github",
