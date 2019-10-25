@@ -2,9 +2,7 @@
   "application": "hellogo",
   "pipelines": [
     {
-      "stages": [
-	  	{{ module "bake.manifest.module" }}
-	  ],
+      "stages": [],
       "application": "hellogo",
       "keepWaitingPipelines": false,
       "limitConcurrent": true,
