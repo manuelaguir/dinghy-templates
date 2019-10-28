@@ -7,8 +7,7 @@
       "limitConcurrent": true,
       "name": "test-dream",
       "locked": {
-          "allowUnlockUi": true,
-          "ui": false
+          "allowUnlockUi": true
       },
       "expectedArtifacts": [
         {
