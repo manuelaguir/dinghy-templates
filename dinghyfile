@@ -19,7 +19,7 @@
             "version": "master"
           },
           "displayName": "display",
-          "id": "id1",
+          "id": "id2",
           "matchArtifact": {
             "artifactAccount": "github",
             "name": "gld/stb/hellogo/kustomization.yml",
