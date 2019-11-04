@@ -18,7 +18,7 @@
       "id": "id1"
    },
    "inputArtifacts":[],
-   "name":"Bake (Manifest)",
+   "name":"Bake test",
    "notifications":[
       {
          "address":"cory.ramirez@dreamworks.com",
