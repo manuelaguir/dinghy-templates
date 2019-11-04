@@ -21,11 +21,11 @@
    "name":"Bake test",
    "notifications":[
       {
-         "address":"manuel.aguirre@armory.io",
+         "adidress":"manuel.aguirre@armory.io",
          "level":"stage",
          "message":{
             "stage.failed":{
-               "text":"This is a test"
+               "text":"This is a second test"
             }
          },
          "type":"email",
