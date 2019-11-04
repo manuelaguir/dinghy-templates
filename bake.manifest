@@ -21,11 +21,11 @@
    "name":"Bake test",
    "notifications":[
       {
-         "address":"cory.ramirez@dreamworks.com",
+         "address":"manuel.aguirre@armory.io",
          "level":"stage",
          "message":{
             "stage.failed":{
-               "text":"testing"
+               "text":"This is a test"
             }
          },
          "type":"email",
