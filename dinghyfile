@@ -5,10 +5,7 @@
       "application": "dreamworks",
       "keepWaitingPipelines": false,
       "limitConcurrent": true,
-      "name": "test-pipe-dream",
-      "locked": {
-          "allowUnlockUi": true
-      },
+      "name": "test-autoLock",
       "expectedArtifacts": [
         {
           "defaultArtifact": {
