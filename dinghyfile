@@ -15,7 +15,7 @@
             "type": "github/file",
             "version": "master"
           },
-          "displayName": "test display",
+          "displayName": "display",
           "id": "id2",
           "matchArtifact": {
             "artifactAccount": "github",
