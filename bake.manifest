@@ -18,7 +18,7 @@
       "id": "id1"
    },
    "inputArtifacts":[],
-   "name":"Bake test2",
+   "name":"Bake testing for modules",
    "notifications":[
       {
          "adidress":"manuel.aguirre@armory.io",
