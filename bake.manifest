@@ -4,7 +4,7 @@
          "defaultArtifact":{
             "type":"embedded/base64"
          },
-         "displayName":"test manifest",
+         "displayName":"display test manifest",
          "matchArtifact":{
             "name":"baked-manifest",
             "type":"embedded/base64"
