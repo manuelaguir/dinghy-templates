@@ -4,7 +4,7 @@
          "defaultArtifact":{
             "type":"embedded/base64"
          },
-         "displayName":"baked-manifest",
+         "displayName":"test manifest",
          "matchArtifact":{
             "name":"baked-manifest",
             "type":"embedded/base64"
@@ -38,6 +38,6 @@
    ],
    "overrides":{},
    "sendNotifications":false,
-   "templateRenderer":"KUSTOMIZE",
+   "templateRenderer":"HELM2",
    "type":"bakeManifest"
 }
