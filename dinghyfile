@@ -5,7 +5,7 @@
       "application": "dreamworks",
       "keepWaitingPipelines": false,
       "limitConcurrent": true,
-      "name": "testing-locked",
+      "name": "another-testing",
       "expectedArtifacts": [
         {
           "defaultArtifact": {
